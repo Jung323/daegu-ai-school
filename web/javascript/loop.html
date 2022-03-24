@@ -1,0 +1,33 @@
+
+<!doctype html>
+<html>
+    <head></head>
+    <body>
+        <h1>배열(Array)</h1>
+        <script>
+            var topics = ['html','css','js'];
+            var members = ['egoing','seoyi','sehyun']
+            console.log(topics.length); // topics배열에 들어있는 갯수
+            console.log(topics[0]) //topics 1번째 element 가져옴
+        </script>
+
+        <h2>반복문(Loop)</h2>
+        <script>
+            console.log(1);
+            for(let i=0;i<3;i=i+1){
+                console.log(2);
+                console.log(3);
+            }
+            console.log(4);
+        </script>
+
+        <h1>Array+Loop</h1>
+        <script>
+            var topics=['html','css','js'];
+            for(let i=0;i<topics.length;i=i+1){
+                console.log('i는', topics[i]); //콘솔창에 표시
+                document.write('<li>'+topics[i]+'</li>'); //웹페이지에 표시
+            }
+        </script>
+    </body>
+</html>

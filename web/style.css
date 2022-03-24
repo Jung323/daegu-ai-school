@@ -1,0 +1,12 @@
+
+body{
+    background-image: url(https://picsum.photos/536/354);
+    background-size: cover;
+}
+h1{
+    border-bottom: 15px solid yellow !important;
+}
+#container{
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+}
