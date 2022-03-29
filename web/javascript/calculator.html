@@ -1,0 +1,32 @@
+<html>
+<body>
+    
+        <h1>계산기</h1>
+        <h2>계산기버튼을 클릭해 숫자를 입력하십시오.</h2>
+        <input type="button" value="계산기" onclick="
+            let var1=Number(prompt('첫번째 숫자'));
+            let str1=prompt('연산기호');
+            let var2=Number(prompt('두번째 숫자'));
+            function calculator(var1,var2,str1){
+                if (str1==='+'){
+                    결과=var1+var2;
+                }
+                if (str1==='-'){
+                    결과=var1-var2;
+                }
+                if (str1==='*'){
+                    결과=var1*var2;
+                }
+                if (str1==='/'){
+                    결과=var1/var2;
+                }else{
+                    결과='연산기호오류'
+                }
+                return 결과
+            }
+            alert('계산결과: '+ calculator(var1,var2,str1));
+        ">
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+    //https://egoingsb.github.io/daegu-ai-school-web-src/javascript/buttons.html
+    //모든버튼누르기
+    <script>
+        let btn =document.querySelectorAll('input');
+        for (let i=0;i<btn.length;i++){
+            btn[i].click() ;
+    }
+    </script>
+
+    //100초과 버튼누르기
+    <script>
+        let btn =document.querySelectorAll('input');
+        for (let i=0;i<btn.length;i++){
+            if(btn[i].value>100){
+                btn[i].click() ;
+            }   
+    }
+    </script>
+
+    //100초과 200미만버튼 누르기
+    <script>
+        let btn=document.querySelectorAll('input');
+        for (let i=0;i<btn.length;i++){
+            if (btn[i].value>100){
+                if(btn[i].value<200){
+                    btn[i].click();
+                }
+            }
+        }
+    </script>
+
+    <script>
+        let btn =document.querySelectorAll('input');
+        for (let i=0;i<btn.length;i++){
+            if(btn[i].value>100 && btn[i].value<200){
+                btn[i].click() ;
+            }   
+    }
+    </script>
+</html>
